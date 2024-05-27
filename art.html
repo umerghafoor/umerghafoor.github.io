@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umer - personal portfolio</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/art_style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top" class="dark_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <img src="./assets/images/logo.svg" class="main-logo" alt="LOGO">
+
+      <div class="navbar-actions">
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="index.html" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="index.html" class="navbar-link">Skills</a>
+          </li>
+
+          <li>
+            <a href="projects.html" class="navbar-link">Projects</a>
+          </li>
+
+          <li>
+            <a href="index.html" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article class="container">
+
+
+
+
+     <!-- 
+        - #PROJECTS
+      -->
+
+      
+
+      <section class="project" id="portfolio">
+
+        <div class="divider"></div>
+        <ul class="project-list">
+          <li class="about-content section-content">
+
+            <script>
+              document.addEventListener("DOMContentLoaded", function() {
+                const projectList = document.querySelector(".project-list");
+            
+                // Function to create project card
+                function createProjectCard(imageSrc) {
+                  const projectCard = document.createElement("li");
+                  projectCard.classList.add("about-content", "section-content");
+            
+                  projectCard.innerHTML = `
+                    <a href="#" class="project-card">
+                      <div class="project-image-list">
+                        <figure class="card-banner">
+                          <img src="${imageSrc}" class="w-100">
+                        </figure>
+                      </div>
+                    </a>
+                    <div style="width: 20px; height: 20px;"></div>
+                  `;
+            
+                  return projectCard;
+                }
+            
+                // Load project cards dynamically
+                const artFolder = "./art/";
+                for (let i = 8; i > 0; i--) {
+                  const imageSrc = `${artFolder}art (${i}).jpg`;
+                  const projectCard = createProjectCard(imageSrc);
+                  projectList.appendChild(projectCard);
+                  console.log(imageSrc);
+                }
+                for (let i = 8; i > 0; i--) {
+                  const imageSrc = `${artFolder}art (${i}).png`;
+                  const projectCard = createProjectCard(imageSrc);
+                  projectList.appendChild(projectCard);
+                }
+              });
+            </script>
+                    
+          </li>
+
+        </ul>
+
+      </section>
+
+      
+    </article>
+</main>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

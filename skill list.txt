@@ -1,0 +1,31 @@
+### Technical Skills:
+1. C
+2. C++
+3. Python
+4. TensorFlow
+5. NumPy
+6. Pandas
+7. PyTorch
+8. scikit-learn
+9. MATLAB
+10. Dart
+11. HTML/CSS
+12. SQL
+
+### Development Tools and Frameworks:
+1. Git
+2. GitHub
+3. GitLab
+4. Docker
+5. Arduino
+6. Qt Framework
+7. Flutter
+8. Android Studio
+9. VS Code
+10. Jupyter Lab
+11. OpenCV
+12. Linux
+13. Blender
+14. Figma
+15. Illustrator
+16. Photoshop
